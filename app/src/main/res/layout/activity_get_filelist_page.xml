@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".GetFileListPAge">
+
+    <TextView
+        android:id="@+id/textViewEx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="기간 동안 매일 반복하신 후 \n ./mnt/sdcard/Android/kl01files/
+ 또는 \n ./내장메모리/sdcard/Android/kl01files/
+ 날짜별파일들을 압축하여 메일로 보내주세요 (폴더통째로 압축) \n 연락 이메일 bbanana32b@gmail.com"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewFileList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bt__getCacheFileList"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:scrollbars="vertical|horizontal"
+        android:text="파일목록"
+        android:textSize="20dp" />
+    <Button
+        android:onClick="onBackButtonClicked"
+        android:id="@+id/bt_back_3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEx3"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:text="되돌아 가기" />
+
+    <Button
+        android:id="@+id/bt__getCacheFileList"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_back_3"
+
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:text="파일 목록은" />
+
+
+
+</RelativeLayout>

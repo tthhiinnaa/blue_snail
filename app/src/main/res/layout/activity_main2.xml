@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/textViewEx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_back_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:scrollbars="vertical|horizontal"
+        android:text="처음에 권한: 저장공간, 알림을 허용해주세요. \n1.을 클릭하여 임시메모리를 삭제합니다. \n
+2.실행중인 카카오톡이 있다면 반드시 수동으로 종료해주셔야 합니다.
+카톡 실행 후 맨 위에서부터 맨 아래까지 쭉 내려주세요. \n 카카오톡 친구목록을 부드럽게 스크롤하여
+default폴더의 용량이 더 이상 증가하지 않는다면 정상적 실행입니다.
+보통2048kbyte이상의 크기입니다. (친구수가 많을 수록 큽니다)\n
+또는 아래의 다른 편의 앱의 스크롤기능으로 아래로 한번, 위로 한번, 아래로 한번 클릭해주세요 \n
+3.그 후 파일이름 날짜로 변경 버튼을 클릭! \n
+4.날짜명 파일 상태 확인을 클릭하여 정상적으로 오늘 날짜의 파일이 존재하는지 확인합니다. \n
+에러시 이메일또는 카카오톡으로 연락주세요. \n 연락 이메일 bbanana32b@gmail.com"
+        android:textSize="20dp" />
+
+    <Button
+        android:onClick="onBackButtonClicked"
+        android:id="@+id/bt_back_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button_bg"
+        android:text="되돌아 가기" />
+
+    <Button
+        android:id="@+id/bt_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_back_2"
+        android:layout_alignTop="@+id/bt_back_2"
+        android:layout_toRightOf="@+id/bt_back_2"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:text="편의 앱 스크롤 사용법(추천)" />
+
+
+
+</RelativeLayout>

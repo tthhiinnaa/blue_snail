@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ReadmeHowtoScroll">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="98dp"
+        android:layout_height="424dp"
+        android:layout_below="@+id/text_Scrollapp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/img_howtoscroll" />
+
+    <TextView
+        android:id="@+id/text_Scrollapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_back_3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="편의 앱 사용법 AutomaticScroll앱을 구글Play스토어에서 다운로드 받습니다."
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textScrollappReadme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_Scrollapp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:text="설정-접근성-설치된 서비스에서 Automatic Scroll을 사용 중으로 설정해주세요,\n 또한 다른 앱 위에 그리기를 허용해주세요. \n AutomaticScroll 실행 후 Start Service를 켜주시고 +를 눌러 카카오톡을 추가하거나 Global activation을 켜주세요"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewRead123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textScrollappReadme"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:textColor="#4F0088"
+        android:scrollbars="vertical|horizontal"
+        android:text="카카오톡 실행 후 친구목록에서 \n1.아래로 쭉 내리기 버튼을 1번 \n2.위로 쭉 올리기 버튼을 1번 \n3.아래로 쭉 내리기 버튼을 1번 \n 친구목록에서 위아래로 이동한 후 default폴더의 용량이 증가한다면 아직 충분히 부드럽게 처음부터 끝까지 이동하지 않은 것입니다. 화살표 버튼을 다시 눌러주세요."
+        android:textSize="20dp" />
+
+    <Button
+        android:onClick="onBackButtonClicked"
+        android:id="@+id/bt_back_3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/button_bg"
+        android:text="되돌아 가기" />
+
+    <Button
+        android:id="@+id/bt_scrolletc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_toRightOf="@+id/bt_back_3"
+        android:layout_alignTop="@+id/bt_back_3"
+        android:background="@drawable/button_bg"
+        android:text="기타 및 팁" />
+
+
+
+</RelativeLayout>

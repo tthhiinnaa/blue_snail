@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".Main2Activity">
+
+
+    <TextView
+        android:id="@+id/textETCset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_back_etc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:textColorLink="@color/colorPrimary"
+        android:autoLink="web"
+        android:text="https://drive.google.com/drive/folders/1eMGRIqLH9n8B8BE2mFQGkHA7kFDAkgOs"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/textETCset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textETCset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="처음 앱 다운로드 및 설명서는 위 링크에 있습니다. \n 하단 글씨가 잘릴 경우 스크롤을 해보세요. \n default폴더의 용량은 친구 총 숫자에 대략적으로 비례하며 보통 1500kb~4000kbyte입니다. (친구 400명 기준 대략 2200kbyte) \n 친구목록을 맨 위에서 맨아래까지 부드럽게 스크롤하엿을때 용량이 정상 기준입니다. \n 앱 버전 : v0.16"
+        android:textSize="20dp" />
+    <Button
+        android:onClick="onBackButtonClicked"
+        android:id="@+id/bt_back_etc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:text="되돌아 가기" />
+
+
+
+
+</RelativeLayout>
